@@ -15,16 +15,16 @@ Django is a powerful web framework for Python !
 - python manage.py shell : 操作程式 ( ex. 輸入資料... )
 
 ### 設定端口
-python manage.py runserver 8080
+> python manage.py runserver 8080
 
 ### SQLite3 DataBase ( terminal 操作 )
-> from main.models import Item, ToDoList
-> t = ToDoList(name='Jack\'s list')
-> t.save()
-> ToDoList.objects.all()
-> t.item_set.all()
-> t.item_set.create(text='go home', complete=False)
-> t.filter(name__startswith='hello')
+- > from main.models import Item, ToDoList
+- > t = ToDoList(name='Jack\'s list')
+- > t.save()
+- > ToDoList.objects.all()
+- > t.item_set.all()
+- > t.item_set.create(text='go home', complete=False)
+- > t.filter(name__startswith='hello')
 
 ### Admin dashboard
 > python manage.py createsuperuser
