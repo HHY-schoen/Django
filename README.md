@@ -2,8 +2,10 @@
 Django is a powerful Web Framework for Python !
 
 1. cd 到資料夾後，在終端機輸入指令，會自動創建模板
-  ```django-admin startproject <file_name>```
-2. 終端機輸入 (創建連線網址)
+  ```python
+  django-admin startproject <file_name>
+  ```
+3. 終端機輸入 (創建連線網址)
   `python manage.py runserver`
 
 
