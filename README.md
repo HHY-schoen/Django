@@ -1,11 +1,11 @@
 ## Django
---------
-Django is a powerful web framework for Python !
-- set up a Django project
-- configure URLs
-- create database models
-- render dynamic data with templates
-- use the Django admin panel
+Django is a powerful Web Framework for Python !
+
+1. cd 到資料夾後，在終端機輸入指令，會自動創建模板
+  '''django-admin startproject <file_name>'''
+2. 終端機輸入 (創建連線網址)
+  'python manage.py runserver'
+
 
 ## Terminal
 - django-admin startproject <file_name> : it will automatically create some templated file for you.
