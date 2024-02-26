@@ -1,23 +1,30 @@
 ## Django
 Django is a powerful Web Framework for Python !
-
+### Setup
 1. cd 到資料夾後，在終端機輸入指令，會自動創建模板
   ```python
   django-admin startproject <file_name>
   ```
-3. 終端機輸入 (創建連線網址)
-  `python manage.py runserver`
+2. 連線
+  ```python
+  python manage.py runserver
+  ```
+  > python manage.py runserver 5050 : 指定端口為 5050
+3. Create application
+  ```python
+  python manage.py startapp <app_name>
+  ```
+- main/ views.py : 用來存放應用中的各種 view (ex. app_name = main)
+
+
 
 
 ## Terminal
-- django-admin startproject <file_name> : it will automatically create some templated file for you.
 - python manage.py migrate : 可以在不影響現有數據的前提下，重建表結構。
 - python manage.py makemigrations main : 用於創建與應用程式中的模型更改相關的數據庫遷移（migrations）
 - python manage.py migrate : apply the change
 - python manage.py shell : 操作程式 ( ex. 輸入資料... )
 
-### 設定端口
-> python manage.py runserver 8080
 
 ### SQLite3 DataBase ( terminal 操作 )
 - > from main.models import Item, ToDoList
